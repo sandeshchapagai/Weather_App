@@ -28,3 +28,17 @@ void main() {
     expect(find.text('1'), findsOneWidget);
   });
 }
+// {
+// ListTile(
+// title: Text('Location'),
+// subtitle: Text(
+// 'Latitude: ${weatherData['coord']['lat']}, Longitude: ${weatherData['coord']['lon']}',
+// ),
+// ),
+// ListTile(
+// title: Text('Weather'),
+// subtitle: Text(
+// 'Main: ${weatherData['weather'][0]['main']}, Description: ${weatherData['weather'][0]['description']}',
+// ),
+// ),
+// }
