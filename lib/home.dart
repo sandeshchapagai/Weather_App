@@ -11,14 +11,6 @@ class Home extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: AppBar(
-          title: Text('Weather',
-          style:GoogleFonts.ubuntu(
-          textStyle:TextStyle(
-            fontWeight: FontWeight.w800,
-            fontSize: 30,
-          ),),
-          ),
-          centerTitle: true,
           backgroundColor: Colors.transparent,
           elevation: 0,
           leading: IconButton(
@@ -32,26 +24,29 @@ class Home extends StatelessWidget {
       body: Stack(
         children: [
           // Background Image for Body
-          Opacity(
-            opacity: 0.9,
-            child: Image.asset(
-              'assets/images/background.jpg',
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: double.infinity,
-            ),
+          Image.asset(
+            'assets/images/background.jpg',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
           ),
-          // Other content goes here
+
           Container(
-            padding: EdgeInsets.fromLTRB(20, 100, 20, 20),
-            child: Center(
-              // Add your other widgets here
-              child: Text(
-                'Your Content Goes Here',
-                style: TextStyle(color: Colors.white),
-              ),
+            padding: EdgeInsets.only(top: 150,left: 40 ),
+            child: Column(
+              children: [
+                  Text(
+                    'Nepal',
+                    style: GoogleFonts.ubuntu(
+                      color: Colors.white,
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+              ],
             ),
           ),
+          Text('jbhdv',style: GoogleFonts.ubuntu(color: Colors.white),)
         ],
       ),
     );
