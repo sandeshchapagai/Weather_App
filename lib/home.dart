@@ -18,7 +18,6 @@ class Home extends StatelessWidget {
             onPressed: () {},
           ),
           actions: [],
-
         ),
       ),
       body: Stack(
