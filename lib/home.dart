@@ -21,7 +21,6 @@ class Home extends StatelessWidget {
         ),
       ),
       body: Stack(
-
         children: [
           // Background Image for Body
           Image.asset(
