@@ -35,7 +35,6 @@ class Home extends StatelessWidget {
             child: Column(
               children: [
                   Text(
-                    
                     'Nepal',
                     style: GoogleFonts.ubuntu(
                       color: Colors.white,
